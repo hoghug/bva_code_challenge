@@ -1,0 +1,6 @@
+development:
+  password: 42135fde8e34ad2542eed8892ffc22a5
+  theme_id: "100766613549"
+  store: protalus-dev-3.myshopify.com
+  ignore_files:
+  - config/settings_data.json

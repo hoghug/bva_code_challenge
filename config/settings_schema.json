@@ -1,0 +1,43 @@
+[
+  {
+  	"name": "General Settings",
+    "settings": [
+	    {
+	      "type": "image_picker",
+        "label": "Hero Image",
+	      "id": "hero_image"
+	    },
+	    {
+	      "type": "select",
+	      "id": "text_alignment",
+	      "label": "Text Alignment",
+        "options": [
+          { "value": "left", "label": "left" },
+          { "value": "center", "label": "center" },
+          { "value": "right", "label": "right" }
+        ]
+	    },
+      {
+        "type": "text",
+        "id": "text_title",
+        "label": "Title",
+        "default": "Header Text"
+      },
+      {
+        "type": "textarea",
+        "id": "text_copy",
+        "label": "Copy"
+      },
+      {
+        "type": "text",
+        "id": "cta_text",
+        "label": "CTA Text"
+      },
+      {
+        "type": "text",
+        "id": "cta_url",
+        "label": "CTA Url"
+      }
+    ]
+  }
+]

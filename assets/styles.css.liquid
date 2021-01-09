@@ -1,0 +1,62 @@
+body {
+	font-family: 'Roboto';
+}
+
+.hero-section {
+  background-image: url({{ settings.hero_image | img_url: 'master' }});
+	background-size: cover;
+	margin: 30px auto;
+	padding: 30px;
+	width: 100%;
+	max-width: 1200px;
+	color: white;
+	box-sizing: border-box;
+}
+
+.hero-section > div {
+	padding: 40px 0;
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+h1 {
+	font-weight: 700;
+	margin: 0;
+}
+
+p {
+	margin-top: .5em;
+	font-weight: 300;
+	line-height: 1.6em;
+}
+
+a {
+	background-color: #57AD68; 
+	color: white;
+	border-radius: 20px;
+	padding: .5em 1em;
+	font-size: 20px;
+	font-weight: 300;
+	text-decoration: none;
+	text-transform: uppercase;
+
+}
+
+a:hover {
+	color: #57AD68
+	background-color: #FFFFFF;
+}
+
+
+@media only screen and (min-width: 601px) {
+	.hero-section > div.left {
+		text-align: left;
+		margin: 0 50% 0 0;
+	}
+
+  .hero-section > div.right {
+		margin-left: 50%;
+		text-align: right;
+	}
+}
