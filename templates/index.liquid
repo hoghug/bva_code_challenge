@@ -1,11 +1,11 @@
 <div class="hero-section">
 	<div class="{{ settings.text_alignment }}">
 		<h1>{{ settings.text_title }}</h1>
-		{% if settings.text_copy %}
+		{% if settings.text_copy != '' %}
 			<p>{{ settings.text_copy }}</p>
 		{% endif %}
-		{% if settings.cta_text %}
-			<a href="{% if settings.cta_url %}{{ settings.cta_url }}{% else %}#{% endif %}" target="_blank">{{ settings.cta_text }}</a>
+		{% if settings.cta_text != '' %}
+			<a href="{% if settings.cta_url != '' %}{{ settings.cta_url }}{% else %}#{% endif %}" target="_blank">{{ settings.cta_text }}</a>
 		{% endif %}
 	</div>
 </div>
